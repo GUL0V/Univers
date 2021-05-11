@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:paddingBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:context=".DetailUniverseActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="Кубанский государственный аграрный университет им. И.Т. Трубилина"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Об университе"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/info2"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="0dp"
+        android:layout_margin="16dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kuban_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/middle_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Средний бал:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_main" />
+
+    <TextView
+        android:id="@+id/middle_point2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/middle_point1"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point" />
+
+    <TextView
+        android:id="@+id/middle_point3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Лицензия на право ведения образовательной деятельности:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point2" />
+
+    <TextView
+        android:id="@+id/middle_point4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/middle_point2"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point3" />
+
+
+    <TextView
+        android:id="@+id/middle_point5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Аккредитация:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point4" />
+
+    <TextView
+        android:id="@+id/middle_point6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Нет"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point5" />
+
+
+    <TextView
+        android:id="@+id/middle_point7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Факультеты:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point6" />
+
+    <TextView
+        android:id="@+id/fac1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Агрономии и экологии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_point7" />
+
+
+    <TextView
+        android:id="@+id/sample1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Гордостью факультета являются его выпускники — всемирно известные ученые-селекционеры, дважды Герои Социалистического Труда, лауреаты Сталинской и Ленинской премий, академики П.П. Лукьяненко и B.C. Пустовойт, имена которых присвоены ФГБНУ «Национальному центру зерна» и ФГБНУ «ФНЦ «Всероссийскому научно-исследовательскому институту масличных культур». Эти ученые внесли огромный вклад в теорию селекции и создали уникальные высокопродуктивные сорта озимой пшеницы и подсолнечника."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac1" />
+
+
+    <TextView
+        android:id="@+id/fac2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Агрохимии и защиты растений"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample1" />
+
+
+
+
+    <TextView
+        android:id="@+id/sample2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="textStart"
+        android:text="Факультет агрохимии и защиты растений имеет полувековую историю. За время его существования сложилась классическая научная школа, позволяющая готовить высококвалифицированных кадров."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac2" />
+    <TextView
+        android:id="@+id/fac3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Архитектурно-строительный"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample2" />
+
+
+    <TextView
+        android:id="@+id/sample3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Архитектурно-строительный факультет образован в 1974 году. Первым деканом факультета был доцент А.С. Кононенко, затем факультет возглавляли – профессора К.Ш. Шадунц, Ю.Д. Северин, С.М. Резниченко, В.Д. Таратута, а с 2021 года деканом факультета является Д.Г. Серый. За годы работы факультетом подготовлено более 2600 инженеров-строителей, более 400 инженеров архитекторов, более 100 магистров."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac3" />
+    <TextView
+        android:id="@+id/fac4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Ветеринарной медицины"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample3" />
+
+
+    <TextView
+        android:id="@+id/sample4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Необходимость в ветеринарных кадрах на Кубани ощущалась в течение многих лет, так как в Краснодарском крае широко развито общественное животноводство. Общеизвестно, что в условиях высокой концентрации животных на ограниченных площадях возникают различные заболевания, которые наносят существенный экономический ущерб сельскому хозяйству."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac4" />
+    <TextView
+        android:id="@+id/fac5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Гидромелиорации"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample4" />
+
+
+    <TextView
+        android:id="@+id/sample5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Студенты получают специальное образование, связанное с инженерными системами, а именно с созданием, ремонтом и эксплуатацией систем водоснабжения и водоотведения, получают навыки в области управления процессами, систем автоматизированного проектирования, управления качеством, приобретают знания в области экологии, экономики предприятия, насосных станций и водозаборных сооружений и др."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac5" />
+
+    <TextView
+        android:id="@+id/fac6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Землеустроительный"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample5" />
+
+
+    <TextView
+        android:id="@+id/sample6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="На базе кафедры геодезии факультета водного хозяйства и мелиорации в 1993 году был организован инженерно-землеустроительный факультет. В 1998 году организован процесс подготовки студентов на факультете земельного кадастра."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac6" />
+    <TextView
+        android:id="@+id/fac7"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample6" />
+
+
+    <TextView
+        android:id="@+id/sample7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac7" />
+
+    <TextView
+        android:id="@+id/fac8"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample7" />
+
+
+    <TextView
+        android:id="@+id/sample8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac8" />
+
+    <TextView
+        android:id="@+id/fac9"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample8" />
+
+
+    <TextView
+        android:id="@+id/sample9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac9" />
+
+    <TextView
+        android:id="@+id/fac10"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample9" />
+
+
+    <TextView
+        android:id="@+id/sample10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac10" />
+
+    <TextView
+        android:id="@+id/fac11"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample10" />
+
+
+    <TextView
+        android:id="@+id/sample11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac11" />
+
+    <TextView
+        android:id="@+id/fac12"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample11" />
+
+
+    <TextView
+        android:id="@+id/sample12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac12" />
+
+    <TextView
+        android:id="@+id/fac13"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample12" />
+
+
+    <TextView
+        android:id="@+id/sample13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac13" />
+
+    <TextView
+        android:id="@+id/fac14"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample13" />
+
+
+    <TextView
+        android:id="@+id/sample14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac14" />
+
+    <TextView
+        android:id="@+id/fac15"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample14" />
+
+
+    <TextView
+        android:id="@+id/sample15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac15" />
+
+    <TextView
+        android:id="@+id/fac16"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample15" />
+
+
+    <TextView
+        android:id="@+id/sample16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac16" />
+
+    <TextView
+        android:id="@+id/fac17"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/btn_background2"
+        android:text="Зоотехнии"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample16" />
+
+
+    <TextView
+        android:id="@+id/sample17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Высшая школа по подготовке специалистов животноводов начала зарождаться в составе сельскохозяйственного отделения Северо-Кавказского политехнического института образованного 16 июня 1918 г. Постановлением Наркомпросса СССР от 12 марта 1922 г. был создан Кубанский сельскохозяйственный институт. С этого момента в институте функционирует пять предметных комиссий, в их числе, зоотехническая. В 1930 году сельскохозяйственный институт претерпел реорганизацию, в результате которой были образованы пять узкоспециализированных институтов, в том числе и Северо-Кавказский институт свиноводства."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac17" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fac18"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/btn_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample17" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Официальный сайт"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/internet_logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fac19"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/btn_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac18" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Группа в ВК"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/vk_logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fac20"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/btn_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac19" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Википедия"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/wiki_logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fac21"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/btn_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac20" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Показать на карте"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/map_logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
